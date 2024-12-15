@@ -1,17 +1,18 @@
-import { getWeather } from './weather_api.mjs';
+import { getWeather } from "./weather_api.mjs";
 
-const cityInput = document.querySelector('.cityInput');
-const weatherButton = document.querySelector('.weatherButton');
-const weatherData = document.querySelector('.weatherData');
+const cityInput = document.querySelector(".cityInput");
+const weatherButton = document.querySelector(".weatherButton");
+const weatherData = document.querySelector(".weatherData");
 
-weatherButton.addEventListener('click', async () => {
+weatherButton.addEventListener("click", async () => {
   const city = cityInput.value;
   if (city) {
     try {
       const data = await getWeather(city);
       displayWeather(data);
     } catch (error) {
-      weatherData.innerHTML = '<p>Error fetching weather data. Please try again.</p>';
+      weatherData.innerHTML =
+        "<p>Error fetching weather data. Please try again.</p>";
     }
   }
 });

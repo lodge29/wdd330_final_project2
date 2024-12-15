@@ -1,33 +1,31 @@
 * {
-    box-sizing: border-box;
-    
-  }
+  box-sizing: border-box;
+}
 
 body {
-    margin: 10px 50px 10px 50px;
+  margin: 10px 50px 10px 50px;
 }
 
 .wrapper {
-    margin:0 auto;
-    max-width: 800px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
+  margin: 0 auto;
+  max-width: 800px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
 }
 
 .header {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    color: red;
+  color: red;
 }
 
 main {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .footer {
-    text-align: center;
+  text-align: center;
 }
