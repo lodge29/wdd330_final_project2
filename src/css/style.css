@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
   }
 
 body {
@@ -9,9 +10,9 @@ body {
 .wrapper {
     margin:0 auto;
     max-width: 800px;
-    border-width: 2px;
     border-style: solid;
     border-color: black;
+    border-width: 1px;
 }
 
 .header {
@@ -23,10 +24,8 @@ h1 {
 }
 
 main {
-    border-width: 2px;
-    border-style: solid;
-    border-color: blue;
     text-align: center;
+    
 }
 
 .footer {
