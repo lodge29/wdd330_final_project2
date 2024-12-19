@@ -9,8 +9,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(121, 186, 212);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 h1 {
@@ -24,13 +24,12 @@ main {
 }
 
 select {
-  width: 40%;
   text-align: center;
 }
 
 button {
   border-radius: 10px;
-  width: 30%;
+  width: 100px;
   height: 40px;
   text-align: center;
   font-size: 1em;
@@ -41,8 +40,10 @@ button {
 .cityInput {
   border-radius: 10px;
   padding: 10px;
-  width: 50%;
   font-size: 1em;
+  transition:
+    width 0.5s ease,
+    height 0.5s ease;
 }
 
 .cityInput option {
@@ -90,8 +91,8 @@ button {
   border-width: 2px;
   border-radius: 8px;
   margin-bottom: 10px;
-  transition: box-shadow 0.8s ease;
-  transition: font-size 0.7s ease;
+  transition: box-shadow 1s ease;
+  transition: font-size 1s ease;
   margin-right: 20px;
   margin-left: 20px;
 }
