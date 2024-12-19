@@ -9,8 +9,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: black;
+  animation-name: example;
+  animation-duration: 5s;
 }
 
 h1 {
@@ -21,7 +23,14 @@ h1 {
 main {
   max-width: 500px;
   text-align: center;
-}
+  
+  }
+
+  @keyframes example {
+    25% {background-color: white;}
+    75% {background-color: rgb(73, 114, 184);}
+  }
+
 
 select {
   text-align: center;
@@ -141,9 +150,11 @@ button {
     background-color: white;
     display: flex;
     border-style: solid;
-
     border-radius: 8px;
     max-width: 100%;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-delay: 5s;
   }
 
   .wrapper-3 {
@@ -153,5 +164,10 @@ button {
 
   #forecast-container {
     height: 50px;
+  }
+
+  @keyframes example {
+    25% {background-color: white;}
+    75% {background-color: grey;}
   }
 }
