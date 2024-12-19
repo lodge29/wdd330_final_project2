@@ -1,32 +1,155 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
 }
 
 body {
-  margin: 10px 50px 10px 50px;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 800px;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-}
-
-.header {
-  text-align: center;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 h1 {
-  color: red;
+  color: black;
+  font-size: 200%;
 }
 
 main {
+  max-width: 500px;
   text-align: center;
 }
 
-.footer {
+select {
+  width: 40%;
   text-align: center;
+}
+
+button {
+  border-radius: 10px;
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  font-size: 1em;
+  background-color: white;
+  color: black;
+}
+
+.cityInput {
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  font-size: 1em;
+}
+
+.cityInput option {
+  font-size: 1em;
+}
+
+#validation {
+  color: red;
+}
+
+.current-temp {
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 5em;
+  
+}
+
+.current-weather-1 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#current-weather-div p:first-of-type {
+  font-weight: bold;
+}
+
+#current-weather-div {
+  margin: 5px;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 8px;
+}
+
+
+#forecast-container {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.8s ease;
+  transition: font-size 0.7s ease;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#forecast-container:hover {
+  box-shadow: 5px 5px 10px black;
+  font-size: 200%;
+}
+
+#date, #temp, #weather {
+  padding: 10px;
+  
+}
+
+#date {
+  padding-left: 10px;
+  text-align: center;
+  flex: 5%;
+  font-weight: bold;
+}
+
+#temp {
+  flex: 5%;
+  text-align: right;
+}
+
+#weather {
+  flex: 50%;
+  text-align: center;
+}
+
+.hidden-img {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    height: 900px;
+    background: url('/img/seasons_3.jpg');
+    background-position: center;
+  }
+
+  main {
+    background-color: white;
+    display: flex;
+    border-style: solid;
+
+    border-radius: 8px;
+    max-width: 100%;
+  }
+
+  .wrapper-3 {
+    width: 100%;
+    height: auto;
+  }
+
+  #forecast-container {
+    height: 5vh;
+  }
+
 }

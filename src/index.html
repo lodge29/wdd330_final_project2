@@ -8,25 +8,20 @@
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        JavaScript is my least favorite. CSS is awesome though
-      </header>
+      
+      <header class="header"></header>
       <main class="main">
-        <h1>Weather API coming soon!</h1>
-        <label>Maybe a dropdown list for Utah cities only?</label><br /><br />
-        <input
-          type="text"
-          class="cityInput"
-          placeholder="Drop down list instead?"
-          value="West Jordan"
-        />
-        <button class="weatherButton">Search Weather</button>
-        <div class="weatherData">
-          <p>Weather data will go here</p>
+        <div class="wrapper-1">
+          <h1>Utah City Weather</h1>
+          <select class="cityInput">
+            <option value="">Select a City</option>
+          </select>
+          <button class="weatherButton">Search</button>
+        
+
+          <div class="weatherData"></div>
         </div>
+        <div class="wrapper-3"></div>
       </main>
-      <footer class="footer">Graduation April 2025</footer>
-    </div>
   </body>
 </html>

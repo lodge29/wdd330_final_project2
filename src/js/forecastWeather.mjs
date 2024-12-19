@@ -9,13 +9,15 @@ export function displayForecastWeather(data) {
   let forcastWeatherHTML = '<h2>Daily Weather Forecast</h2>';
   // template for looping through JSON
   dailyForecast.forEach(day => {
-    const date = new Date(day.dt * 1000).toLocaleDateString();
+    //const date = new Date(day.dt * 1000).toLocaleDateString();
+    // display date as '01/20'
+    const date = new Date(day.dt * 1000).toLocaleDateString('en-US', { weekday: 'short' });
     const temp = Math.round(day.main.temp);
     forcastWeatherHTML += `
-      <div>
-        <h3>${date}</h3>
-        <p>Temperature: ${temp}°F</p>
-        <p>Weather: ${day.weather[0].description}</p>
+      <div id="forecast-container">
+        <div id="date">${date}</div>
+        <div id="temp">${temp}°</div>
+        <div id="weather">${day.weather[0].description}</div>
       </div>
     `;
   });
