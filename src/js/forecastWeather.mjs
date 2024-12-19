@@ -14,7 +14,7 @@ export function displayForecastWeather(data) {
     const date = new Date(day.dt * 1000).toLocaleDateString('en-US', { weekday: 'short' });
     const temp = Math.round(day.main.temp);
     forcastWeatherHTML += `
-      <div id="forecast-container">
+      <div id="forecast-container"">
         <div id="date">${date}</div>
         <div id="temp">${temp}°</div>
         <div id="weather">${day.weather[0].description}</div>
